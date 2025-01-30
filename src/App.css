@@ -38,6 +38,17 @@ h1 {
   line-height: 1.1;
 }
 
+input {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -77,37 +88,40 @@ button:focus-visible {
 #root {
   width: 100vw;
   height: 100vh;
-} 
-
-
+}
 
 .animal-page > button {
-
   margin: 20px;
+}
 
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto 20px;
 }
 
 .animal-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .animal-container {
   text-align: center;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 350px;
   background-color: #f9f9f9;
   color: #2196f3;
- 
 }
 
 .animal-animal {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .animal-image {
@@ -117,10 +131,22 @@ button:focus-visible {
   object-fit: cover;
 }
 
+.animal-image-small {
+  border-radius: 10%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border: white 2px solid;
+}
+
+.animal-image-small:hover {
+  transform: scale(1.2);
+  border: #2196f3 2px solid;
+}
+
 .animal-stats {
   margin-top: 20px;
   display: flex;
-
 }
 
 .stat {
