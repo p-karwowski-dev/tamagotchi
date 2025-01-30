@@ -22,7 +22,11 @@ export const Animal = memo(({ id }: { id: string }) => {
         <div className="stat">
           <strong>Hunger:</strong>
           <div className="meter">
-            <div className="meter-fill" style={{ width: hunger + "%" }}></div>
+            <div
+              data-testid="hunger-meter"
+              className="meter-fill"
+              style={{ width: hunger + "%" }}
+            ></div>
           </div>
           <button onClick={act("FEED")} className="action-button">
             Feed
@@ -32,6 +36,7 @@ export const Animal = memo(({ id }: { id: string }) => {
           <strong>Happiness:</strong>
           <div className="meter">
             <div
+              data-testid="happiness-meter"
               className="meter-fill"
               style={{ width: happiness + "%" }}
             ></div>
@@ -44,6 +49,7 @@ export const Animal = memo(({ id }: { id: string }) => {
           <strong>sleepiness:</strong>
           <div className="meter">
             <div
+              data-testid="sleepiness-meter"
               className="meter-fill"
               style={{ width: sleepiness + "%" }}
             ></div>
