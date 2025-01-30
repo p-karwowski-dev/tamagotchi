@@ -2,16 +2,12 @@
 
 > _What could be more fun than having a pet? Making your own!_
 
-## What is this?
-
-Your job is to create your own digital pet platform using this codebase as a starting point - how you continue is up to you!
-
 ## Overview
 
 1. Clone the project
-2. Run `bun install`
-3. Write some magic to make your pets come alive!
-4. Push up to a brand new repo and send us a link
+2. Run `bun install` or `npm install`
+3. Run `bun run test` or `npm run test`
+4. Run `bun run dev` or `npm run dev`
 
 ## The Brief
 
